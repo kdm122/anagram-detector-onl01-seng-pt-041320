@@ -1,4 +1,5 @@
 # Your code goes here!
+require 'pry'
 class Anagram
   
   attr_accessor :word 
@@ -10,6 +11,7 @@ class Anagram
   
   def match(words)
     individual = words
+    binding.pry
     individual.each do |test_word|
       testarray = test_word.split("")
       basearray = word.split("")
