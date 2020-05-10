@@ -11,8 +11,9 @@ class Anagram
   
   def match(words)
     individual = words
-    binding.pry
+    
     individual.each do |test_word|
+      binding.pry
       testarray = test_word.split("")
       basearray = word.split("")
       if basearray.sort == testarray.sort
