@@ -8,7 +8,7 @@ class Anagram
     @word = word
   end
   
-  def match(words)
+  def match(%w(words))
   #  warray = %w(words)
     words.each do |test_word|
       testarray = test_word.split("")
