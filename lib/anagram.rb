@@ -9,8 +9,13 @@ class Anagram
   end
   
   def match(words)
-    wordarray = %w(words) 
-    self.match(wordarray)
+    warray = %w(words)
+    warray.each do |test_word|
+      testarray = test_word.split
+      basearray = word.split
+      basearray.sort == testarray.sort
+    end
+   # self.match(warray)
   end
   
 end
