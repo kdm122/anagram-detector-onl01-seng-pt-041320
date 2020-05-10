@@ -9,8 +9,8 @@ class Anagram
   end
   
   def match(words)
-    warray = %w(words)
-    warray.each do |test_word|
+  #  warray = %w(words)
+    words.each do |test_word|
       testarray = test_word.split
       basearray = word.split
       basearray.sort == testarray.sort
