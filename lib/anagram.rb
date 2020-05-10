@@ -13,7 +13,9 @@ class Anagram
     words.each do |test_word|
       testarray = test_word.split
       basearray = word.split
-      basearray.sort == testarray.sort
+      if basearray.sort == testarray.sort
+        return test_word
+      end
     end
    # self.match(warray)
   end
