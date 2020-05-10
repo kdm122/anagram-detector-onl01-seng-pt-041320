@@ -10,7 +10,7 @@ class Anagram
   
   def match(words)
     wordarray = %w(words) 
-    word.match(wordarray)
+    self.match(wordarray)
   end
   
 end
