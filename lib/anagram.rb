@@ -9,8 +9,8 @@ class Anagram
   end
   
   def match(words)
-    wordarray = 
-    word.match(%w(words))
+    wordarray = %w(words) 
+    word.match(wordarray)
   end
   
 end
