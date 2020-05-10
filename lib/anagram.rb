@@ -3,6 +3,10 @@ class Anagram
   
   attr_accessor :word 
   
-  initialize
+    initialize(word)
+  
+    @word = word
+  end
+  
   
 end
