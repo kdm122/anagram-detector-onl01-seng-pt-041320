@@ -10,6 +10,7 @@ class Anagram
   end
   
   def match(words)
+    final_array = []
     individual = words
     
     individual.each do |test_word|
@@ -17,9 +18,10 @@ class Anagram
       testarray = test_word.split("")
       basearray = word.split("")
       if basearray.sort == testarray.sort
-        return test_word
+        final_array << test_word
       end
     end
+    final_array
    # self.match(warray)
   end
   
